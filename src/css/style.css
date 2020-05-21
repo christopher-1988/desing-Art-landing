@@ -155,16 +155,41 @@ body {
 }
 
 .about .about__titulo {
-  background-color: gray;
   flex: 0 0 100%;
   max-width: 100%;
 }
 
 .about .about__titulo h2 {
-  background-color: blue;
   display: inline-block;
+  font-size: 2em;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: black;
+  margin: 0 0 10px;
+  position: relative;
 }
-.about .about__titulo p {
-  background-color: blanchedalmond;
+.about .about__titulo h2::before {
+  content: "";
+  left: 0;
+  right: 20%;
+  position: absolute;
+  height: 2px;
+  background-color: var(--salmon);
+  bottom: 0;
+}
+.about .about__titulo p .small {
+  color: #838383;
   display: block;
+  font-size: 1em;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.about .about__content {
+  margin-top: 20px;
+}
+.about .about__image {
+  margin-top: 20px;
+}
+.about .image__text {
+  margin-top: 20px;
 }
