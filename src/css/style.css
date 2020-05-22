@@ -2,6 +2,10 @@
   --salmon: salmon;
   --carne: #f3eebfe3;
   --blanco: white;
+  --car: {
+    color: red;
+    background-color: blue;
+  }
 }
 
 body {
@@ -154,6 +158,10 @@ body {
   color: var(--salmon);
 }
 
+.about {
+  padding: 100px 30px;
+  background-color: white;
+}
 .about .about__titulo {
   flex: 0 0 100%;
   max-width: 100%;
@@ -164,8 +172,8 @@ body {
   font-size: 2em;
   text-transform: uppercase;
   font-weight: 600;
-  color: black;
   margin: 0 0 10px;
+  color: black;
   position: relative;
 }
 .about .about__titulo h2::before {
@@ -177,19 +185,95 @@ body {
   background-color: var(--salmon);
   bottom: 0;
 }
-.about .about__titulo p .small {
+.about .about__titulo .small {
   color: #838383;
   display: block;
   font-size: 1em;
   font-weight: 600;
   text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
 }
 .about .about__content {
-  margin-top: 20px;
+  display: flex;
 }
 .about .about__image {
-  margin-top: 20px;
+  flex: 0 0 33.433%;
+  max-width: 33.33%;
 }
-.about .image__text {
+.about .about__image img {
+  width: 100%;
+  display: block;
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+}
+
+.about .about__text {
+  flex: 0 0 66.66%;
+  max-width: 66.66%;
+  margin-left: 30px;
+}
+.about .about__text h4 {
+  font-size: 2em;
+  font-weight: 500;
+  margin: 0 0 5px;
+  color: #000000;
+}
+
+.about .about__text h6 {
+  font-size: 1.4em;
+  font-weight: 400;
+  margin: 0 0 15px;
+  color: #000000;
+}
+
+.about .about__text span {
+  color: salmon;
+}
+
+.about .about__text .about__inf {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.about__text .about__inf .item {
+  margin-top: 10px;
+  flex: 0 0 calc(50% -15px);
+  max-width: calc(50% -15px);
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: 1px solid salmon;
+  padding-bottom: 10px;
+}
+.about__text .about__inf .item label {
+  margin-right: 5px;
+  font-size: 1em;
+  font-weight: 600;
+  color: #000000;
+}
+
+.about p {
+  color: #838383;
+}
+
+.about__social {
   margin-top: 20px;
+  text-align: center;
+}
+.about__social ul {
+  list-style: none;
+  margin-top: 10;
+}
+.about__social ul li {
+  display: inline-block;
+  margin-right: 10px;
+  height: 32px;
+  width: 32px;
+  background-color: black;
+  border-radius: 2px;
+}
+.about__social ul li a {
+  text-decoration: none;
+  color: white;
 }
