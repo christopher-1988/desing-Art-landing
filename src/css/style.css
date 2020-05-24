@@ -366,9 +366,35 @@ body {
   color: #838383;
   margin: 10px 0 10px;
 }
-.skill .skill__content .skill__box {
+.skill__content .skill__box {
   flex: 0 0 100%;
   max-width: 100%;
-  background-color: red;
-  margin: 15px;
+  margin-bottom: 10px;
+}
+
+.skill__content .skill__box h6 {
+  font-size: 1em;
+  font-weight: 600;
+  line-height: 24px;
+  margin: 0 0 10px;
+}
+.skill__content .skill__box .skill__bar {
+  height: 6px;
+  background-color: rgba(58, 49, 49, 0.164);
+  position: relative;
+}
+.skill__content .skill__box .skill__bar .skill__bar__in {
+  height: 6px;
+  background-color: salmon;
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 100%;
+  position: relative;
+}
+
+.skill__content .skill__box .skill__bar .skill__bar__in span {
+  position: absolute;
+  right: 0;
+  top: -30px;
 }
