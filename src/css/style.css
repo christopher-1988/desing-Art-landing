@@ -398,3 +398,117 @@ body {
   right: 0;
   top: -30px;
 }
+/*----------------portafolio----------------------------*/
+
+.portfolio {
+  background-color: #dfd7d74f;
+  padding: 50px 30px;
+}
+.portfolio__title {
+  flex: 0 0 100%;
+  max-width: 100%;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.portfolio .filter {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+.portfolio .filter ul {
+  list-style: none;
+  text-align: center;
+}
+.portfolio .filter ul li {
+  margin-right: 10px;
+  display: inline-block;
+  font-size: 1em;
+  font-weight: 400;
+  text-transform: uppercase;
+  position: relative;
+  cursor: pointer;
+}
+.portfolio .filter ul li.active {
+  border-bottom: 2px solid var(--salmon);
+  color: var(--salmon);
+}
+.portfolio .filter li :hover {
+  border-bottom: 2px solid var(--salmon);
+  color: var(--salmon);
+}
+.portfolio .porfolio__galery {
+  margin-top: 40px;
+  flex: 0 0 100%;
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.porfolio__galery .item {
+  flex: 0 0 30%;
+  max-width: 30%;
+  position: relative;
+  margin-top: 10px;
+}
+.porfolio__galery .item .overlay {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  min-width: 100%;
+  min-height: 100%;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 10;
+}
+.porfolio__galery .item .overlay span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  font-weight: 800;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  background-color: var(--salmon);
+  margin: 10px;
+  animation: AnimatBtnPlus 0.8s ease;
+}
+@keyframes AnimatBtnPlus {
+  0% {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.porfolio__galery .item .overlay h4 {
+  font-size: 1.5em;
+  font-weight: 600;
+  color: white;
+  animation: AnimatTxt 0.8s ease;
+}
+@keyframes AnimatTxt {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.porfolio__galery .item:hover .overlay {
+  display: flex;
+}
+
+.portfolio .porfolio__galery .item img {
+  width: 100%;
+  display: block;
+}
