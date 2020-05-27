@@ -241,8 +241,8 @@ img {
 
 .about__text .about__inf .item {
   margin-top: 10px;
-  flex: 0 0 calc(50% -15px);
-  max-width: calc(50% -15px);
+  flex: 0 0 45%;
+  max-width: 45%;
   display: flex;
   flex-wrap: wrap;
   border-bottom: 1px solid salmon;
@@ -445,13 +445,16 @@ img {
   max-width: 100%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  /*justify-content: space-between;*/
 }
 .porfolio__galery .item {
   flex: 0 0 30%;
   max-width: 30%;
   position: relative;
-  margin-top: 10px;
+  padding: 10px;
+}
+.porfolio__galery .item .inner {
+  position: relative;
 }
 .porfolio__galery .item .overlay {
   display: none;
@@ -516,4 +519,45 @@ img {
 .portfolio .porfolio__galery .item img {
   width: 100%;
   display: block;
+}
+.lightbox {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+}
+.lightbox .show {
+  display: flex;
+}
+.lightbox .hide {
+  display: none;
+}
+
+.lightbox img {
+  max-width: 100%;
+  max-height: 100%;
+  padding: 10px;
+}
+
+.lightbox .close-lightbox {
+  position: absolute;
+  top: 12px;
+  right: 10px;
+  height: 40px;
+  width: 40px;
+  line-height: 20px;
+  text-align: center;
+  font-size: 1.4em;
+  font-weight: 600;
+  z-index: 101;
+  cursor: pointer;
+  color: salmon;
+  padding: 10px;
+  border-radius: 50%;
+  background-color: white;
 }

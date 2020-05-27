@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width , initial-scale=1.0" />
-    <title>Jose Antonio</title>
+    <title>template</title>
     <link
       href="https://fonts.googleapis.com/css2?family=BenchNine:wght@700&family=Shadows+Into+Light&display=swap"
       rel="stylesheet"
@@ -234,7 +234,7 @@
         </div>
         <div class="row">
           <div class="filter">
-            <ul>
+            <ul id="filter">
               <li class="active" data-target="all">Todos</li>
               <li data-target="escultura">Escultura</li>
               <li data-target="pintura">Pintura</li>
@@ -245,65 +245,77 @@
         <div class="row">
           <div class="porfolio__galery">
             <div class="item" data-id="pintura">
-              <img
-                loading="lazy"
-                data-src="./src/img/gallery/foto-9.jpg"
-                alt=""
-                class="lazyload"
-              />
-              <div class="overlay">
-                <span class="fa fa-plus">+</span>
-                <h4>Pintura</h4>
+              <div class="inner">
+                <img
+                  loading="lazy"
+                  data-src="./src/img/gallery/foto-9.jpg"
+                  alt=""
+                  class="lazyload"
+                />
+                <div class="overlay">
+                  <span class="fa fa-plus">+</span>
+                  <h4>Pintura</h4>
+                </div>
               </div>
             </div>
             <div class="item" data-id="pintura">
-              <img src="./src/img/gallery/foto-2.jpg" alt="" />
-              <div class="overlay">
-                <span class="fa fa-plus">+</span>
-                <h4>Pintura</h4>
+              <div class="inner">
+                <img src="./src/img/gallery/foto-2.jpg" alt="" />
+                <div class="overlay">
+                  <span class="fa fa-plus">+</span>
+                  <h4>Pintura</h4>
+                </div>
               </div>
             </div>
             <div class="item" data-id="escultura">
-              <img
-                loading="lazy"
-                data-src="./src/img/gallery/foto-8.jpg"
-                alt=""
-                class="lazyload"
-              />
-              <div class="overlay">
-                <span class="fa fa-plus">+</span>
-                <h4>Pintura</h4>
+              <div class="inner">
+                <img
+                  loading="lazy"
+                  data-src="./src/img/gallery/foto-8.jpg"
+                  alt=""
+                  class="lazyload"
+                />
+                <div class="overlay">
+                  <span class="fa fa-plus">+</span>
+                  <h4>Pintura</h4>
+                </div>
               </div>
             </div>
             <div class="item" data-id="performace">
-              <img
-                loading="lazy"
-                data-src="./src/img/gallery/foto-4.jpg"
-                alt=""
-                class="lazyload"
-              />
-              <div class="overlay">
-                <span class="fa fa-plus">+</span>
-                <h4>Pintura</h4>
+              <div class="inner">
+                <img
+                  loading="lazy"
+                  data-src="./src/img/gallery/foto-4.jpg"
+                  alt=""
+                  class="lazyload"
+                />
+                <div class="overlay">
+                  <span class="fa fa-plus">+</span>
+                  <h4>Pintura</h4>
+                </div>
               </div>
             </div>
             <div class="item" data-id="escultura">
-              <img src="./src/img/gallery/foto-5.jpg" alt="" />
-              <div class="overlay">
-                <span class="fa fa-plus">+</span>
-                <h4>Pintura</h4>
+              <div class="inner">
+                <img src="./src/img/gallery/foto-5.jpg" alt="" />
+                <div class="overlay">
+                  <span class="fa fa-plus">+</span>
+                  <h4>Pintura</h4>
+                </div>
               </div>
             </div>
             <div class="item" data-id="performace">
-              <img
-                loading="lazy"
-                data-src="./src/img/gallery/foto-6.jpg"
-                alt=""
-                class="lazyload"
-              />
-              <div class="overlay">
-                <span class="fa fa-plus">+</span>
-                <h4>Pintura</h4>
+              <div class="inner">
+                <img
+                  loading="lazy"
+                  data-src="./src/img/gallery/foto-6.jpg"
+                  alt=""
+                  class="lazyload"
+                />
+                <div class="overlay">
+                  <span class="fa fa-plus">+</span>
+                  <h4>Pintura</h4>
+                </div>
               </div>
             </div>
           </div>
@@ -311,6 +323,19 @@
       </div>
     </section>
     <!----------end portafolio--------->
+
+    <div class="lightbox">
+      <span class="close-lightbox">x</span>
+      <img
+        loading="lazy"
+        data-src="./src/img/gallery/foto-6.jpg"
+        alt=""
+        class="lazyload"
+      />
+    </div>
+
     <script src="./src/js/lazyload.js"></script>
+    <script src="./src/js/galery.js"></script>
+    <script src="./src/js/lightbox.js"></script>
   </body>
 </html>
