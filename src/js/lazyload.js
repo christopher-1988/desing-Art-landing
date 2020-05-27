@@ -1,6 +1,7 @@
 if ("loading" in HTMLImageElement.prototype) {
   const images = document.querySelectorAll("img.lazyload");
-
+  // Si el navegador soporta lazy-load, tomamos todas las imágenes que tienen la clase
+  // `lazyload`, obtenemos el valor de su atributo `data-src` y lo inyectamos en el `sr c`.
   images.forEach((img) => {
     img.src = img.dataset.src;
   });

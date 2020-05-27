@@ -482,6 +482,7 @@ img {
   margin: 10px;
   -webkit-animation: AnimatBtnPlus 0.8s ease;
   animation: AnimatBtnPlus 0.8s ease;
+  cursor: pointer;
 }
 @keyframes AnimatBtnPlus {
   0% {
@@ -531,10 +532,10 @@ img {
   justify-content: center;
   align-items: center;
 }
-.lightbox .show {
+.show {
   display: flex;
 }
-.lightbox .hide {
+.hide {
   display: none;
 }
 
@@ -560,4 +561,11 @@ img {
   padding: 10px;
   border-radius: 50%;
   background-color: white;
+}
+.row__message {
+  background-color: #0c0c17;
+  font-size: 1em;
+  font-weight: 600;
+  color: white;
+  padding: 30px 50px;
 }
