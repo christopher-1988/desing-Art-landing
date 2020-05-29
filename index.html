@@ -19,13 +19,22 @@
           <div class="personal__brand">
             <a href="">Carnevale Art</a>
           </div>
-          <!--<input type="checkbox" id="open__menu" class="checkbox" />-->
-          <!--<label for="open__menu" class="menu__open"></label>-->
-          <nav class="navbar">
-            <ul>
-              <li class="link"><a href="" class="active">Home</a></li>
-              <li class="link"><a href="">Portafolio</a></li>
-              <li class="link"><a href="">Contacta</a></li>
+          <input type="checkbox" id="hmb_open" class="checkbox" />
+
+          <label for="hmb_open" class="navToggle">
+            <div class="hamburger" for="open__menu">
+              <div class="line"></div>
+              <div class="line"></div>
+              <div class="line"></div>
+            </div>
+          </label>
+          <nav class="navbar open">
+            <ul class="nav">
+              <li class="link"><a href="#Home" class="active">Home</a></li>
+              <li class="link"><a href="#About">About</a></li>
+              <li class="link"><a href="#Service">Service</a></li>
+              <li class="link"><a href="#Skill">Skill</a></li>
+              <li class="link"><a href="#last">last Work</a></li>
             </ul>
           </nav>
         </div>
@@ -33,7 +42,7 @@
     </header>
     <!--end header-->
     <!----------start hero--------->
-    <section class="hero">
+    <section class="hero" id="Home">
       <div class="container">
         <div class="row xelf">
           <div class="content__block">
@@ -47,9 +56,10 @@
       </div>
     </section>
     <!----------end home--------->
+
     <!----------start about--------->
-    <section class="about">
-      <div class="container m-t">
+    <section class="about" id="About">
+      <div class="container">
         <div class="row">
           <div class="utl__title">
             <h2>about me</h2>
@@ -106,7 +116,7 @@
       </div>
     </section>
     <!----------end about--------->
-    <section class="service">
+    <section class="service" id="Service">
       <div class="container">
         <div class="row">
           <div class="service__titulo">
@@ -159,7 +169,7 @@
     </section>
     <!----------start about--------->
     <!----------start skill--------->
-    <section class="skill">
+    <section class="skill" id="Skill">
       <div class="container">
         <div class="row alinear">
           <div class="skill__content">
@@ -219,13 +229,18 @@
     <section class="row__message">
       <div class="container">
         <div class="row">
-          <h5>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores, ipsam quibusdam, ex ipsa quas necessitatibus itaque rerum, blanditiis est architecto explicabo veritatis eius quae nulla voluptates mollitia obcaecati reiciendis eos.</h5>
+          <h5>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores,
+            ipsam quibusdam, ex ipsa quas necessitatibus itaque rerum,
+            blanditiis est architecto explicabo veritatis eius quae nulla
+            voluptates mollitia obcaecati reiciendis eos.
+          </h5>
         </div>
       </div>
     </section>
     <!----------end skill--------->
     <!----------start portafolio--------->
-    <section class="portfolio">
+    <section class="portfolio" id="last">
       <div class="container">
         <div class="row">
           <div class="portfolio__title">
@@ -262,7 +277,12 @@
             </div>
             <div class="item" data-id="pintura">
               <div class="inner">
-                <img src="./src/img/gallery/foto-2.jpg" alt="" />
+                <img
+                  loading="lazy"
+                  data-src="./src/img/gallery/foto-2.jpg"
+                  alt=""
+                  class="lazyload"
+                />
                 <div class="overlay">
                   <span class="fa-plus">+</span>
                   <h4>Pintura</h4>
@@ -299,7 +319,12 @@
             </div>
             <div class="item" data-id="escultura">
               <div class="inner">
-                <img src="./src/img/gallery/foto-5.jpg" alt="" />
+                <img
+                  loading="lazy"
+                  data-src="./src/img/gallery/foto-5.jpg"
+                  alt=""
+                  class="lazyload"
+                />
                 <div class="overlay">
                   <span class="fa-plus">+</span>
                   <h4>Pintura</h4>
@@ -331,9 +356,24 @@
       <img loading="lazy" data-src="" alt="" class="lazyload" />
     </div>
     <!----------end-lightbox --------->
-
-    <script src="./src/js/lazyload.js"></script>
-    <script src="./src/js/galery.js"></script>
-    <script src="./src/js/lightbox.js"></script>
+    <!----------start-footer --------->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer__logo">
+            <h3>logo</h3>
+          </div>
+          <div class="footer__social">
+            <a href="">f</a>
+            <a href="">i</a>
+          </div>
+          <div class="copy__rigth">
+            <p>&copy; all reserve Carnevale_Dev</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!----------end-footer --------->
+    <script src="./src/js/index.js" type="module"></script>
   </body>
 </html>
