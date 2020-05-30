@@ -478,8 +478,8 @@ img {
   /*justify-content: space-between;*/
 }
 .porfolio__galery .item {
-  flex: 0 0 30%;
-  max-width: 30%;
+  flex: 0 0 33.33%;
+  max-width: 33.33%;
   position: relative;
   padding: 10px;
 }
@@ -659,7 +659,7 @@ img {
     border-bottom: none;
   }
   .header .personal__brand {
-    width: 40%;
+    width: 50%;
   }
   .header .personal__brand a {
     font-size: 16px;
@@ -752,6 +752,40 @@ img {
     margin-bottom: 20px;
     margin-top: 10px;
   }
+
+  /*-----------------------skill----------------------*/
+
+  .skill .skill__content {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding-right: 30px;
+  }
+
+  .skill .skill_picture {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .skill .utl__title h2 {
+    font-size: 1.5em;
+  }
+  .skill .utl__title h2::before {
+    content: "";
+    left: 0;
+    right: 0;
+    position: absolute;
+    height: 2px;
+    background-color: var(--salmon);
+    bottom: 0;
+    width: 80%;
+  }
+  /*---------------------galery----------------------------*/
+  .porfolio__galery .item {
+    flex: 0 0 100%;
+    max-width: 100%;
+    position: relative;
+    padding: 10px;
+  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -776,8 +810,7 @@ img {
     font-size: 0.8em;
   }
   /*---------------------*/
-  .about .about__content {
-  }
+
   .about .about__image {
     flex: 0 0 38.33%;
     max-width: 38.33%;
@@ -828,5 +861,32 @@ img {
     text-transform: uppercase;
     margin-bottom: 20px;
     margin-top: 10px;
+  }
+
+  /*-----------------------skill----------------------*/
+
+  .skill .skill__content {
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding-right: 30px;
+  }
+
+  .skill .skill_picture {
+    flex: 0 0 45%;
+    max-width: 45%;
+  }
+
+  .skill .utl__title h2 {
+    font-size: 1.5em;
+  }
+  .skill .utl__title h2::before {
+    content: "";
+    left: 0;
+    right: 0;
+    position: absolute;
+    height: 2px;
+    background-color: var(--salmon);
+    bottom: 0;
+    width: 80%;
   }
 }
